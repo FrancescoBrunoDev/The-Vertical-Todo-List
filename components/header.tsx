@@ -10,7 +10,7 @@ export const Header = () => {
         "pb-10x fixed inset-x-0 top-0 z-40 flex h-32 justify-center bg-background text-center font-black md:h-40",
       )}
     >
-      <Logo className="h-full py-4 pr-4" />
+      <img src={Logo} alt="Logo" className="h-full py-4 pr-4" />
     </div>
   );
 };

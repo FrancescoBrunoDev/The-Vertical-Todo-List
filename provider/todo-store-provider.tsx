@@ -20,7 +20,7 @@ export interface ToDoStoreProviderProps {
 }
 
 export const ToDoStoreProvider = ({ children }: ToDoStoreProviderProps) => {
-  const storeRef = useRef<ToDoStoreApi>();
+  const storeRef = useRef<ToDoStoreApi | null>(null);
   if (!storeRef.current) {
     storeRef.current = createToDoStore(initToDoStore());
   }
